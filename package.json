@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm run start\"",
+    "installer": "concurrently \"npm install\" \"cd backend && npm install\" \"cd frontend && npm install\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
